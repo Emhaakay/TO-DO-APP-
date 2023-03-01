@@ -1,0 +1,53 @@
+.mainFrame{
+    min-height: 34rem;
+    width: 28rem;
+    background-color: #333;
+    color: white;
+    margin: auto auto;
+    border-radius: 20px;
+    border: 3px solid yellow;
+}
+.title{
+    text-align: center;
+}
+.mainBody{
+    padding: 1rem 2rem;
+    /* background-color: aqua; */
+    min-height: 23rem;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid teal;
+    padding: 0 8px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.item:hover{
+    animation: eachItem 0.1s forwards ;
+    background-color: rgba(152, 190, 190, 0.685);
+}
+.item>button{
+    height: 25px;
+}
+.inputBox{
+    text-align: center;
+}
+.inputBox>input{
+    width: 19rem;
+    height: 1.5rem;
+}
+.inputBox>button{
+    height: 1.9rem;
+}
+
+
+/* Animations */
+@keyframes eachItem {
+    from{}
+    to{
+        font-size: 1.1rem;
+        margin-left: 4px;
+    }
+}
