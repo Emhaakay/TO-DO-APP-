@@ -1,3 +1,6 @@
+body{
+    background-color: #444;
+}
 .mainFrame{
     min-height: 34rem;
     width: 28rem;
@@ -5,15 +8,27 @@
     color: white;
     margin: auto auto;
     border-radius: 20px;
-    border: 3px solid yellow;
+    border: 3px solid teal;
 }
 .title{
     text-align: center;
 }
+
 .mainBody{
     padding: 1rem 2rem;
     /* background-color: aqua; */
-    min-height: 23rem;
+    height: 23rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: black;
+    background-color: lightgreen;
+    
+}
+
+.backgroundImage{
+    background-image: url(./Collection\ list\ is\ empty.png);
+    background-position: center;
+    background-size: contain;
 }
 .item{
     display: flex;
@@ -25,22 +40,37 @@
     margin: 10px 0;
 }
 .item:hover{
-    animation: eachItem 0.1s forwards ;
+    /* animation: eachItem 0.1s forwards ; */
+    transform: scale(1.1);
     background-color: rgba(152, 190, 190, 0.685);
 }
-.item>button{
-    height: 25px;
+.item>.fa-circle-check{
+    background-color: white;
+    color: white;
+    
+}
+
+.greenTick{
+    color: green;
 }
 .inputBox{
     text-align: center;
+    margin-top: 1rem;
+    
+    
 }
 .inputBox>input{
-    width: 19rem;
+    width: 22rem;
     height: 1.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-indent: 5px;
 }
 .inputBox>button{
     height: 1.9rem;
+    
 }
+
 
 
 /* Animations */
